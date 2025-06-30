@@ -13,11 +13,11 @@ def publicar(request):
     #     "Post 2: Qué es MVT",
     #     "Post 3: Cómo crear una app"
     # ]
-    pub = [
-        {"1": "Django es Increible.",
-         "2": "Que es MVT",
-         "3": "¿Cómo Crear esta app?"
-         }
+    publicacion = [
+         {"titulo": "1", "contenido": "Django es Increible."},
+         {"titulo": "2", "contenido": "Que es MVT"},
+         {"titulo": "3", "contenido":"¿Cómo Crear esta app?"}
     ]
+    context = {"publicacion": publicacion}
 
-    return render(request, 'blog/inicio.html', {'posts': pub})
+    return render(request, 'blog/inicio.html', {'posts': context})

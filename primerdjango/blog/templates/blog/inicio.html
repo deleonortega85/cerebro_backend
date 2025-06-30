@@ -17,10 +17,13 @@
     </section>
     <section>
         <ul>
-            {% for postear in posts %}
-                {% for i, j in post.items() %}
-                    <li>{{ postear }}</li>
-                {% endfor %}
+            {% for pub in publicacion %}
+            <div class="pub">
+                <h2>{{pub.titulo}}</h2>
+                <p>{{pub.contenido}}</p>
+            </div>
+            {% empty %}
+            <p>No hay más publicaciones</p>
             {% endfor %}
         </ul>
     </section>
