@@ -5,7 +5,7 @@ def inicio(request):
     publicacion = [
          {"titulo": "Post 1", "contenido": "Django es Increible"},
          {"titulo": "Post 2", "contenido": "Que es MVT"},
-         {"titulo": "Post 3", "contenido":"¿Cómo Crear esta app?"}
+         {"titulo": "Post 3", "contenido": "¿Cómo Crear esta app?"}
     ]
     context = {"publicacion": publicacion}
 
