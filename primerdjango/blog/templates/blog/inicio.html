@@ -19,8 +19,7 @@
         <ul>
             {% for pub in publicacion %}
             <div class="pub">
-                <h2>{{pub.titulo}}</h2>
-                <p>{{pub.contenido}}</p>
+                <li>{{pub.titulo}}: {{pub.contenido}}</li>
             </div>
             {% empty %}
             <p>No hay más publicaciones</p>
