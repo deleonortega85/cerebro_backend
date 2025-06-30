@@ -18,11 +18,11 @@
     <section>
         <ul>
             {% for pub in publicacion %}
-            <div class="pub">
-                <li>{{pub.titulo}}: {{pub.contenido}}</li>
-            </div>
-            {% empty %}
-            <p>No hay más publicaciones</p>
+                <div class="pub">
+                    <li>{{pub.titulo}}: {{pub.contenido}}</li>
+                </div>
+                {% empty %}
+                <p>No hay más publicaciones</p>
             {% endfor %}
         </ul>
     </section>
