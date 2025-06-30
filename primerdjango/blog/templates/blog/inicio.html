@@ -15,7 +15,15 @@
             <li>Sobre Django</li>
         </ul>
     </section>
-
+    <section>
+        <ul>
+            {% for postear in posts %}
+                {% for i, j in post.items() %}
+                    <li>{{ postear }}</li>
+                {% endfor %}
+            {% endfor %}
+        </ul>
+    </section>
     <footer>
             <p>--by: Daniel Emilio León Ortega. 2025--</p>
     </footer>
