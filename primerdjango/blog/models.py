@@ -8,4 +8,4 @@ class Post(models.Model):
     publicado = models.BooleanField(default=False)
 
     def __str__(self):
-        return self.titulo + " " + self.autor
+        return self.titulo
