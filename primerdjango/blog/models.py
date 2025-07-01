@@ -8,7 +8,7 @@ class Post(models.Model):
     publicado = models.BooleanField(default=False)
 
     def __str__(self):
-        return self.titulo
+        return self.titulo + ": " + self.autor
 
 class Comentario(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='comentarios')
