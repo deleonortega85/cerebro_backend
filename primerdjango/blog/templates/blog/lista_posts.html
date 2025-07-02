@@ -12,9 +12,9 @@
             <small>Autor: {{ post.autor }} | Fecha: {{ post.fecha_creacion }}</small>
             <section>
                 {% if post.autor == "admin" %}
-                    <p>El Post {{ post.titulo }} SI pertenece a {{ post.autor }}</p>
+                    <b><p>El Post {{ post.titulo }} SI pertenece a {{ post.autor }}</p></b>
                 {% else %}
-                    <p>El Post {{ post.titulo }} NO pertenece a {{ post.autor }}</p>
+                    <p>El Post {{ post.titulo }} NO pertenece a "admin""</p>
                 {% endif %}
             </section>
         </article>
