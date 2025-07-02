@@ -17,15 +17,14 @@
                     <p>El Post {{ post.titulo }} NO pertenece al autor: admin</p>
                 {% endif %}
             </section>
-        </article>
+            <section>
+                <button type="button">Leer más..</button>
+            </section>
+                </article>
         <hr>
     {% empty %}
         <p>No hay posts publicados aún.</p>
     {% endfor %}
-
-    <section>
-        <button type="button">Leer más..</button>
-    </section>
 
     <footer>
         <p>--by: Daniel Emilio León Ortega. 2025--</p>
