@@ -13,8 +13,6 @@
             <section>
                 {% if post.autor == "admin" %}
                     <b><p>El Post {{ post.titulo }} SI pertenece al autor: {{ post.autor }}</p></b>
-                {% else %}
-                    <p>El Post {{ post.titulo }} NO pertenece al autor: admin</p>
                 {% endif %}
             </section>
         </article>
