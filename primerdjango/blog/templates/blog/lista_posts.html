@@ -11,10 +11,6 @@
             <p>{{ post.contenido|truncatewords:30 }}</p>
             <small>Autor: {{ post.autor }} | Fecha: {{ post.fecha_creacion }}</small>
         </article>
-       <!-- <article>
-            <h2>{%if post.autor == "admin" %}</h2>
-            <p>El {{ post.titulo }} SI pertenece al autor {{ post.autor }}.</p>
-        </article> -->
         <hr>
     {% empty %}
         <p>No hay posts publicados aún.</p>
