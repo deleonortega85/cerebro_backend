@@ -4,6 +4,11 @@
     <title>Blog</title>
 </head>
 <body>
+    <section>
+        <a href="/">
+            <button type="button">Volver al inicio.</button>
+        </a>
+    </section>
     <h1>Lista de Posts</h1>
     {% for post in posts %}
         <article>
@@ -27,13 +32,6 @@
     {% empty %}
         <p>No hay posts publicados aún.</p>
     {% endfor %}
-
-    <section>
-        <a href="/">
-            <button type="button">Volver al inicio.</button>
-        </a>
-    </section>
-
     <footer>
         <p>--by: Daniel Emilio León Ortega. 2025--</p>
     </footer>
