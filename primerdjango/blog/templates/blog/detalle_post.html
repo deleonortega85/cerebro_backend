@@ -4,10 +4,12 @@
     <title>{{ post.titulo }}</title>
 </head>
 <body>
+    <hr>
     <h1>{{ post.titulo }}</h1>
     <p>{{ post.contenido }}</p>
     <small>Autor: {{ post.autor }} | Fecha: {{ post.fecha_creacion }} | Total: {{ post.contenido|wordcount }} palabras.</small>
     <br>
+    <hr>
     <section>
         <a href="/blog">
             <button type="button">Volver a la lista de post.</button>
